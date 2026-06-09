@@ -85,7 +85,7 @@ static const char *pdfcmd[] = { "/home/alex/.local/bin/pdf-rofi", "/home/alex/bo
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ MODKEY,                       XK_Return, spawn,          {.v = termcmd } },
-   { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = scnshotcmd } },
+   { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = scrnshotcmd } },
 	{ MODKEY,                       XK_d,      spawn,          {.v = rofi } },
    { MODKEY,                       XK_p,      spawn,          {.v = pdfcmd } },
 
