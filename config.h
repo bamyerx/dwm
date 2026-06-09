@@ -58,9 +58,10 @@ static const int refreshrate = 120;  /* refresh rate (per second) for client mov
 
 static const Layout layouts[] = {
 	/* symbol     arrange function */
-	{ "󰝘",        tile },    /* first entry is default */
-	{ "",        NULL },    /* no layout function means floating behavior */
-	{ "[M]",      monocle }
+   { "III",      horizontal },
+	{ "[]",        tile },    /* first entry is default */
+	{ "[M]",      monocle },
+	{ "><>",        NULL }    /* no layout function means floating behavior */
 };
 
 /* key definitions */
@@ -101,9 +102,9 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_Tab,    view,           {0} },
 	{ MODKEY,                       XK_q,      killclient,     {0} },
 
-	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
-	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
-	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
+	{ MODKEY|ShiftMask,             XK_h,      setlayout,      {.v = &layouts[0]} },
+   { MODKEY|ShiftMask,             XK_t,      setlayout,      {.v = &layouts[1]} },
+	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[2]} },
 	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 
