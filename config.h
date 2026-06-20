@@ -6,32 +6,32 @@ static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const char *fonts[]          = { 
-   "Source Serif 4 Caption Regular:size=11" 
+   "Source Serif 4 Caption Regular:size=12" 
 };
-static const char dmenufont[]       = "Source Serif 4 Caption Regular:size=11";
+static const char dmenufont[]       = "Source Serif 4 Caption Regular:size=12";
 static const char col_gray1[]       = "#222222";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
 static const char col_gray4[]       = "#eeeeee";
 static const char col_cyan[]        = "#005577";
 
-/* tokyonight colors */
-static const char col_bg[]     = "#1a1b26";  // background
-static const char col_fg[]     = "#c0caf5";  // foreground
-static const char col_blk[]    = "#32344a";  // black
-static const char col_red[]    = "#f7768e";  // red
-static const char col_grn[]    = "#9ece6a";  // green
-static const char col_ylw[]    = "#e0af68";  // yellow
-static const char col_blu[]    = "#7aa2f7";  // blue
-static const char col_mag[]    = "#bb9af7";  // magenta
-static const char col_cyn[]    = "#7dcfff";  // cyan 
-static const char col_org[]    = "#ff9e64";  // orange
+/* gruvbox material colors */
+static const char col_bg[]     = "#121110";  // background (from srcery)
+static const char col_fg[]     = "#d4be98";  // foreground
+static const char col_blk[]    = "#32302f";  // black
+static const char col_red[]    = "#ea6962";  // red
+static const char col_grn[]    = "#a9b665";  // green
+static const char col_ylw[]    = "#d8a657";  // yellow
+static const char col_blu[]    = "#7daea3";  // blue
+static const char col_mag[]    = "#d3869b";  // magenta
+static const char col_cyn[]    = "#89b482";  // cyan 
+static const char col_org[]    = "#e78a4e";  // orange
 static const char col_wht[]    = "#a9b1d6";  // white
-static const char col_brblk[]  = "#444b6a";  // bright black
+static const char col_brblk[]  = "#323024";  // bright black
 
 static const char *colors[][3]      = {
 	/*               fg       bg       border   */
-	[SchemeNorm] = { col_fg,  col_bg,  col_brblk },
+	[SchemeNorm] = { col_fg,  col_bg,  col_bg },
 	[SchemeSel]  = { col_org, col_bg,  col_org  },
 };
 
@@ -46,7 +46,7 @@ static const Rule rules[] = {
 	/* class       instance    title       tags mask     isfloating   monitor */
 	{ "Gimp",      NULL,       NULL,       0,            1,           -1 },
    { "feh",       NULL,       NULL,       0,            1,           -1 },
-	{ "librewolf", NULL,       NULL,       0,            0,           -1 },
+	{ "brave",     NULL,       NULL,       0,            0,           -1 },
 };
 
 /* layout(s) */
